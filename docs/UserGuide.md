@@ -167,14 +167,14 @@ _{explain the feature here}_
 
 ## Command summary
 
-Action | Format
---------|------------------
-**Add contant** | `add -c n/“NAME” [p/“PHONE_NUMBER”] [e/“EMAIL”]  [a/“ADDRESS”] [t/“TAGS”]`
-**List contact** | `list -c`
-**View contact** | `view -c INDEX`
-**Delete contact** | `remove -c INDEX`
-**Add journal entry** | `add -j n/“NAME” [d/“DATE AND TIME”] [c/“CONTENT”] [t/“TAGS”]`
-**List journal entry** | `list -c INDEX` 
-**View journal entry** | `view -j INDEX`
+Action                   | Format
+!---                     | !---
+**Add contant**          | `add -c n/“NAME” [p/“PHONE_NUMBER”] [e/“EMAIL”]  [a/“ADDRESS”] [t/“TAGS”]`
+**List contact**         | `list -c`
+**View contact**         | `view -c INDEX`
+**Delete contact**       | `remove -c INDEX`
+**Add journal entry**    | `add -j n/“NAME” [d/“DATE AND TIME”] [c/“CONTENT”] [t/“TAGS”]`
+**List journal entry**   | `list -c INDEX`
+**View journal entry**   | `view -j INDEX`
 **Delete journal entry** | `remove -j INDEX`
-**Show help menu** | `help [COMMAND]`
+**Show help menu**       | `help [COMMAND]`
