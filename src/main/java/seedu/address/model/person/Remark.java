@@ -11,7 +11,6 @@ public class Remark {
 
     public static final String MESSAGE_CONSTRAINTS =
             "Remarks should only contain alphanumeric characters and spaces.";
-    public static final String VALIDATION_REGEX = "[a-z0-9]*";
 
     public final String value;
 
@@ -23,13 +22,6 @@ public class Remark {
     public Remark(String value) {
         requireNonNull(value);
         this.value = value;
-    }
-
-    /**
-     * Returns true if a given string is a valid remark.
-     */
-    public static boolean isValidRemark(String test) {
-        return test.matches(VALIDATION_REGEX);
     }
 
     @Override
