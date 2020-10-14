@@ -2,6 +2,7 @@ package seedu.address.ui;
 
 import java.util.logging.Logger;
 
+import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ListCell;
@@ -49,8 +50,25 @@ public class EntryListPanel extends UiPart<Region> {
      * @param entryContent the EntryContent
      */
     public void setListenToSelectedChangesAndPassToEntryContent(EntryContent entryContent) {
-        entryListView.getSelectionModel().selectedItemProperty().addListener((observableValue, prev, curr) -> {
-            entryContent.setEntryContentToUser(curr);
-        });
+        entryListView.getSelectionModel()
+                .selectedItemProperty()
+                .addListener((observableValue, prev, curr) -> {
+                    entryContent.setEntryContentToUser(curr);
+                });
+        entryListView.getItems()
+                .addListener((ListChangeListener<? super Entry>) change -> {
+                    int listSize = change.getList().size();
+                    switch (listSize) {
+                    case 0:
+                        entryContent.resetEntryContent();
+                        break;
+                    case 1:
+                        Entry leftOver = change.getList().get(0);
+                        entryContent.setEntryContentToUser(leftOver);
+                        break;
+                    default:
+                        break;
+                    }
+                });
     }
 }

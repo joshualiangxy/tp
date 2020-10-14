@@ -43,9 +43,21 @@ public class EntryContent extends UiPart<Region> {
      * @param entry the new entry
      */
     public void setEntryContentToUser(Entry entry) {
+        if (entry == null) {
+            return;
+        }
         this.entry = entry;
         title.setText(entry.getTitle().title);
         description.setText(entry.getDescription().description);
+    }
+
+    /**
+     * Resets the entry content back to the original state.
+     */
+    public void resetEntryContent() {
+        entry = null;
+        title.setText("");
+        description.setText("Please select a Journal Entry...");
     }
 
     public Entry getEntry() {
