@@ -1027,3 +1027,40 @@ IntelliJournal home folder.
     </tbody>
 </table>
 
+### Credits
+
+#### XiaoChen
+
+1. [Viewing a contact `viewc`](#viewing-a-contact-viewc)
+1. [Finding contacts `findc`](#finding-contacts-findc)
+1. [Viewing a journal entry `viewj`](#viewing-a-journal-entry-viewj)
+1. [Finding journal entries `findj`](#finding-journal-entries-findj)
+
+#### ZhengYang
+
+1. [Adding a journal entry: `addjournal`](#adding-a-journal-entry-addjournal)
+1. [Listing all journal entries: `listj`](#listing-all-journal-entries-listj)
+1. [Deleting a journal entry: `deletej`](#deleting-a-journal-entry-deletej)
+1. [Changing the main color theme: `changetheme`](#changing-the-main-color-theme-changetheme)
+
+#### Jazer
+
+1. [Editing a contact: `editc`](#editing-a-contact-editc)
+1. [Deleting a contact: `deletec`](#deleting-a-contact-deletec)
+1. [Clearing the address book: `clearc`](#clearing-the-address-book-clearc)
+1. [Editing a journal entry: `editj`](#editing-a-journal-entry-editj)
+
+#### Geyu
+
+1. [Adding a contact: `addcontact`](#adding-a-contact-addcontact)
+1. [Listing all contacts: `listc`](#listing-all-contacts-listc)
+1. [Adding aliases for existing commands: `alias`](#adding-aliases-for-existing-commands-alias)
+1. [Deleting custom aliases: `deletea`](#deleting-custom-aliases-deletea)
+
+#### Joshua
+
+1. [Checking schedule: `check`](#checking-schedule-check)
+1. [Clearing the journal: `clearj`](#clearing-the-journal-clearj)
+1. [Viewing help menu: `help`](#viewing-help-menu-help)
+1. [Switching the display tab: `switch`](#switching-the-display-tab-switch)
+1. [Exiting the program: `exit`](#exiting-the-program-exit)
